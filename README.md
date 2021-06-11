@@ -2,7 +2,7 @@
 This is a sinppet for handling screen swipes in android (Java &amp; Kotlin). It is inspired by public resources available for swipe listener.
 
 ## Usage for Java Code
-
+```
 //the view you want to put swipe listener
 View view = new View(this);
 
@@ -49,6 +49,6 @@ view.setOnTouchListener(new SwipeListener(this){
     }
 
 });
-
+```
 
 ## Usage for Kotlin
