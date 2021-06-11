@@ -5,7 +5,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class SwipeListener implements View.OnTouchListener {
+public class SwipeListener implements View.OnTouchListener,Gestures {
 
     private GestureDetector gestureDetector;
     private int swipeThreshold = 100;
@@ -17,6 +17,36 @@ public class SwipeListener implements View.OnTouchListener {
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
         return gestureDetector.onTouchEvent(motionEvent);
+    }
+
+    @Override
+    public void onClick() {
+        
+    }
+
+    @Override
+    public void onSwipeRight() {
+
+    }
+
+    @Override
+    public void onSwipeLeft() {
+
+    }
+
+    @Override
+    public void onSwipeDown() {
+
+    }
+
+    @Override
+    public void onSwipeUp() {
+
+    }
+
+    @Override
+    public void onSwipeCompleted() {
+
     }
 
 
@@ -70,33 +100,24 @@ public class SwipeListener implements View.OnTouchListener {
         }
 
 
-        public void onClick(){
-
-        }
-
-        public void onSwipeRight(){
-
-        }
 
 
-        public void onSwipeLeft(){
 
-        }
-
-
-        public void onSwipeDown(){
-
-        }
-
-        public void onSwipeUp(){
-
-        }
-
-        public void onSwipeCompleted(){
-
-        }
+       
 
 
 
     }
+    
+    
+}
+
+
+interface Gestures{
+    void onClick();
+    void onSwipeRight();
+    void onSwipeLeft();
+    void onSwipeDown();
+    void onSwipeUp();
+    void onSwipeCompleted();
 }
