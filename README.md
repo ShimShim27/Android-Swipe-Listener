@@ -55,7 +55,7 @@ view.setOnTouchListener(new SwipeListener(this){
 
 ```
 //the view you want to put swipe listener
-        val view = View(this)
+val view = View(this)
 
 //add the swipe listener
 view.setOnTouchListener(object :SwipeListener(this){
