@@ -1,4 +1,4 @@
-# Simple-Android-Swipe-Listener
+# Android-Swipe-Listener
 This is a sinppet for handling screen swipes in android (Java &amp; Kotlin). It is inspired by public resources available for swipe listeners without needing any library.
 
 ## Usage for Java Code
